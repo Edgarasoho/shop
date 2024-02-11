@@ -1,0 +1,53 @@
+.card {
+  padding: 2rem;
+  height: 15rem;
+  width: 13rem;
+  gap: auto;
+  box-shadow: rgba(1, 1, 1, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: bisque;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 2fr 2rem;
+  grid-template-areas:
+    "title"
+    "description";
+
+  //   @include mixins.tablet {
+  //     width: 47%;
+  //   }
+
+  //   @include mixins.mobile {
+  //     width: 100%;
+  //   }
+
+  h3 {
+    text-align: center;
+    grid-area: title;
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  p {
+    grid-area: description;
+    font-size: 1rem;
+  }
+
+  button {
+    background-color: orange;
+    color: rgb(126, 0, 128);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: yellowgreen;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}
