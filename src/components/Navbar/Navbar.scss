@@ -1,0 +1,30 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-bg);
+  color: var(--white-font);
+  padding: 1rem 2rem;
+}
+.nav-container ul {
+  display: flex;
+  list-style: none;
+  column-gap: 2rem;
+}
+.nav-container ul li {
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &hover {
+    color: green;
+  }
+  &active {
+    color: rgb(52, 224, 52);
+  }
+}
+// .nav-container ul li:hover {
+//   color: green;
+// }
+// .nav-container ul li:active {
+//   color: rgb(52, 224, 52);
+// }
