@@ -1,17 +1,19 @@
 import React from "react";
 import "./Card.scss";
+import Button from "../Button/Button";
 
-function Card({ title, description, setCardData, Card }) {
+function Card({ title, description, handleCardButton, card }) {
   const handleAddToCard = () => {
-    setCardData({ title, description });
+    handleCardButton({ title, description, Button });
   };
   return (
-    <div className="card">
+    <div className="card card-container">
       <h3>{title}</h3>
       <p>{description}</p>
-      <button onClick={handleAddToCard}>
-        {Card ? "Remove from card" : "Add to card"}
-      </button>
+      <Button
+        onClick={handleAddToCard}
+        card={card ? "Remove from cart" : "Add to cart"}
+      />
     </div>
   );
 }

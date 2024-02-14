@@ -1,4 +1,11 @@
 :root {
-  --blue-bg: #081624;
-  --white-font: #d90e0e;
+  --dark-bg: #005062;
+  --light-font: #f4f4f4;
+  --orange-100: #ffb337;
+  --orange-300: #fd9e03;
+  --orange-500: #f2681f;
+  --teal-100: #005352;
+  --teal-300: #113e3c;
+
+  --container-max-width: 930px;
 }

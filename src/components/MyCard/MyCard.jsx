@@ -1,15 +1,25 @@
 import React from "react";
 import Card from "../Cards/Card";
-function MyCard({ cardData, setCardData }) {
+import { handleSort } from "../../utils/sortUtils";
+import SortButton from "../SortButton/SortButon";
+
+function MyCard({ cardData, setCardData, handleRemoveFromCard }) {
+  const handleSortData = (direction) => {
+    const sortedData = handleSort(cardData, direction);
+    setCardData(sortedData);
+  };
+
   return (
     <main className="container">
-      {cardData?.map(({ title, description }) => (
+      <SortButton handleSortData={handleSortData} />
+
+      {cardData.map(({ title, description }) => (
         <Card
           key={title}
           title={title}
           description={description}
-          setCardData={setCardData}
-          Card={true}
+          handleCardButton={handleRemoveFromCard}
+          card={true}
         />
       ))}
     </main>

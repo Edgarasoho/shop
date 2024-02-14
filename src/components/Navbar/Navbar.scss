@@ -2,35 +2,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--blue-bg);
-  color: var(--white-font);
   padding: 1rem 2rem;
+  // background: var(--dark-bg);
+  color: var(--light-font);
   margin-bottom: 2rem;
-}
-.nav-container ul {
-  display: flex;
-  list-style: none;
-  column-gap: 2rem;
-}
-.nav-container ul li {
-  a {
-    cursor: pointer;
-    transition: all 0.2s ease;
-    text-decoration: none;
-    color: rgb(249, 247, 247);
 
-    &hover {
-      color: green;
-    }
+  ul {
+    display: flex;
+    list-style: none;
+    column-gap: 2rem;
 
-    &:active &.active {
-      color: aqua;
+    li {
+      a {
+        text-decoration: none;
+        color: var(--light-font);
+        transition: all 0.2s ease;
+
+        &:hover {
+          color: var(--orange-100);
+        }
+
+        &:active,
+        &.active {
+          color: var(--orange-500);
+        }
+      }
     }
   }
 }
-// .nav-container ul li:hover {
-//   color: green;
-// }
-// .nav-container ul li:active {
-//   color: rgb(52, 224, 52);
-// }
