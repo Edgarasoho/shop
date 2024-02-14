@@ -13,14 +13,19 @@
   column-gap: 2rem;
 }
 .nav-container ul li {
-  cursor: pointer;
-  transition: all 0.2s ease;
+  a {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: rgb(249, 247, 247);
 
-  &hover {
-    color: green;
-  }
-  &active {
-    color: rgb(52, 224, 52);
+    &hover {
+      color: green;
+    }
+
+    &:active &.active {
+      color: aqua;
+    }
   }
 }
 // .nav-container ul li:hover {

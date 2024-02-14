@@ -1,0 +1,10 @@
+.container {
+  max-width: 930px;
+  gap: 2rem;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  //   grid-template-areas: "title" "descript
+}
