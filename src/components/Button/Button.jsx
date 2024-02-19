@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.scss";
 
-const Button = ({ children, type }) => {
+const Button = ({ children, type, onClick }) => {
   let styles = "custom-btn";
 
   switch (type) {
@@ -13,7 +13,7 @@ const Button = ({ children, type }) => {
   }
 
   return (
-    <button className={styles}>
+    <button onClick={onClick} className={styles}>
       <span>{children}</span> <i />
     </button>
   );

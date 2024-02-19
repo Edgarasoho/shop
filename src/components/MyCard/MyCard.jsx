@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "../Cards/Card";
 import { handleSort } from "../../utils/sortUtils";
 import SortButton from "../SortButton/SortButon";
+import { AppContext } from "../../context/AppContext";
 
-function MyCard({ cardData, setCardData, handleRemoveFromCard }) {
+function MyCard() {
+  const { cartData, setCartData, handleRemoveFromCard } =
+    useContext(AppContext);
   const handleSortData = (direction) => {
-    const sortedData = handleSort(cardData, direction);
-    setCardData(sortedData);
+    const sortedData = handleSort(cartData, direction);
+    setCartData(sortedData);
   };
 
   return (
     <main className="container">
       <SortButton handleSortData={handleSortData} />
 
-      {cardData.map(({ title, description }) => (
+      {cartData.map(({ title, description }) => (
         <Card
           key={title}
           title={title}
