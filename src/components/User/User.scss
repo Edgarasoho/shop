@@ -1,0 +1,15 @@
+.user {
+  width: 3.5rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(186, 124, 124, 0.635);
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 2rem;
+}
+.offcanvas-header,
+.offcanvas-body {
+  background-color: grey;
+  color: orange;
+}
