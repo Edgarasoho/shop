@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-image: url(./components/Img/pexels-mark-stebnicki-2255920.jpg);
   margin: 0;

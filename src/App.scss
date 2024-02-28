@@ -1,12 +1,25 @@
+@use "./assets/styles/mixsins";
 @import "~bootstrap/scss/bootstrap";
 
 .container {
-  max-width: 930px;
+  display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  display: flex;
+  max-width: var(--container-max-width);
   margin: 0 auto;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "title" "descript";
+
+  // @include tablet {
+  //   padding: 0 2rem;
+  // }
+}
+.burgerMeniu {
+  display: none;
+}
+@media (max-width: 430px) {
+  .meniu {
+    display: none;
+  }
+  .burgerMeniu {
+    display: block;
+  }
 }

@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+
   border: 10px solid rgba(1, 1, 1, 0.922);
   border-radius: 25px;
 
@@ -33,13 +34,6 @@
     "title"
     "description";
 
-  //   @include mixins.tablet {
-  //     width: 47%;
-  //   }
-
-  //   @include mixins.mobile {
-  //     width: 100%;
-  //   }
   .favorite-icon {
     grid-area: favorite;
     margin: auto;

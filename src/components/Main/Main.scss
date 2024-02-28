@@ -8,6 +8,16 @@
   grid-template-rows: auto;
   grid-template-areas: "title" "description" "button";
 }
-// main {
-// //   background-color: grey;
-// // }
+.container-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+
+  input {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+  }
+}
