@@ -16,7 +16,7 @@ function Main() {
   };
 
   return (
-    <main className="container">
+    <main className="my-container">
       <div className="container-actions">
         <SortButton handleSortData={handleSortData} />
         <input

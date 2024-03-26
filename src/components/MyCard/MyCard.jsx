@@ -14,7 +14,7 @@ function MyCard() {
   };
 
   return (
-    <main className="container">
+    <main className="my-container">
       <div className="myCard-action">
         <SortButton handleSortData={handleSortData} />
         <input
